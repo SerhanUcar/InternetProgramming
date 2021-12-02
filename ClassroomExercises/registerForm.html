@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!--
+    <script>
+        var sayi = 0;
+        function say() {
+            sayi++;
+            document.getElementById("text").value = sayi + "defa tıkladın";
+
+        }
+
+        function renkDegis(color) {
+            var secim = confirm("Arkaplan  değişsin mi?");
+
+            if (secim == true) {
+                document.body.style.background = color;
+            }
+        }
+
+        function rastgeleRenk() {
+            var renkler = new Array();
+            renkler.push("red");
+            renkler.push("blue");
+            renkler.push("green");
+            renkler.push("black");
+            renkler.push("orange");
+
+            var random = Math.floor(Math.random() * renkler.length);
+            document.body.style.background = renkler[random];
+        }
+    </script>
+-->
+
+    <script>
+        function redirect(){
+            <a href="üyelik.html"></a>
+        }
+
+    </script>
+</head>
+
+<body>
+    <!--<div>
+
+        <input type="button" value="Tıkla" onclick="say()">
+        <input type="text" id="text" value="0 defa tıkladınız">
+    </div>
+
+    <div>
+        <input type="button" value="RED" onclick="renkDegis('RED')"><br>
+        <input type="button" value="BLUE" onclick="renkDegis('BLUE')"><br>
+        <input type="button" value="Rastgele" onclick="rastgeleRenk()"><br>
+    </div>
+
+-->
+    <table border="2">
+        <tr>
+            <td style="width:150px">Adı*</td> <td style="width:150px"> <input type="text"; value="İsim Giriniz"; id="name"; required/> </td>
+        </tr>
+        <tr>
+            <td style="width:150px">Soyadı*</td> <td> <input type="text"; value="Soyisim Giriniz"; id="surname" required/> </td> 
+        </tr>
+        <tr>
+            <td style="width:150px">E-posta Adresi*</td> <td> <input type="email"; value="E-posta Giriniz"; id="eposta" required/> </td>
+        </tr>
+        <tr>
+            <td stlye="width:150px">Şifre*</td> <td> <input type="text"; value="8 karakter olmalı"; id="password" required/> </td>
+        </tr>
+        <tr>
+            <td style="width:150px" style="background-color: red;">Şifre Tekrar*</td> <td> <input type="text"; value="Şifre Tekrar"; id="repassword" required/> </td>
+        </tr>
+        <tr><td style="width:150px">Telefon</td> <td> <input type="text"; value="Telefon Numarası"; id="phone"/> </td>
+        </tr>
+        <tr>
+            <td style="width:150px">Cinsiyet</td> <td> <input type="radio"; name="radio"; id="man"/>Erkek <input type="radio"; name="radio"; id="woman"/> Kadın </td>
+        </tr>
+        <tr>
+            <td>Sözleşme</td> <td> <input type="checkbox"; id="approval"/> Sözleşmeyi Kabul Ediyorum </td>
+        </tr>
+        <tr>
+            <td>Kayıt</td> <td> <button> <a href="üyelik.html" style="color: black;" style="text-decoration: none;">Kayıt Ol</a> </button>  </td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
